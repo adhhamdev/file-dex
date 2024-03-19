@@ -1,5 +1,6 @@
 import Card from "@/components/Card";
 import Image from "next/image";
+import icon from './icon.png';
 
 export default function Home() {
   const cards = [
@@ -64,8 +65,9 @@ export default function Home() {
         style={{ boxShadow: "inset 0 -2px 10px 2px rgba(0, 0, 0, .2)" }}
       >
         <div className="container md:ml-32">
-          <h1 className="text-2xl text-center md:text-5xl md:text-left font-bold text-white">
-            FileDex.
+          <h1 className="flex items-center text-2xl text-center md:text-5xl md:text-left font-bold text-white">
+            <Image src={icon} width={50} alt="Logo" />
+            <span className="ml-4">FileDex.</span>
           </h1>
           <p className="mx-auto text-center text-wrap w-2/3 md:text-left md:mx-0 md:text-3xl text-gray-200 ">
             Find the right tool for your file management needs.

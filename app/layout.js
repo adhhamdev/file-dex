@@ -4,7 +4,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "FileDex | Universal File Convertor",
+  title: "FileDex | File Management Platform",
   description: "One place for all your file convertions",
 };
 
