@@ -7,11 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      backgroundImage: (theme) => ({
+        "background-image": "url('/header-bg.svg')",
+      }),
+    },
+    backgroundSize: {
+      cover: "cover",
+      contain: "contain",
+    },
+    backgroundRepeat: {
+      "no-repeat": "no-repeat",
+    },
+    backgroundAttachment: {
+      fixed: "fixed",
     },
   },
   plugins: [],
