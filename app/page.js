@@ -71,7 +71,7 @@ export default function Home() {
   return (
     <>
       <header
-        className="bg-fixed py-4 bg-background-image bg-contain bg-no-repeat md:bg-cover flex items-center rounded-b-xl h-64 md:h-96"
+        className="bg-fixed py-4 bg-background-image bg-contain bg-no-repeat md:bg-cover flex items-center rounded-b-xl h-3/4 md:h-96"
         style={{ boxShadow: "inset 0 -2px 10px 2px rgba(0, 0, 0, .2)" }}
       >
         <div className="container md:ml-32 flex flex-col justify-center md:block">
