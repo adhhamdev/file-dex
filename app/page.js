@@ -95,7 +95,7 @@ export default function Home() {
             alt=""
             width={512}
             height={512}
-            className="absolute right-10 bottom-2/3 w-32 md:right-40 md:bottom-80 md:w-96"
+            className="absolute right-10 top-1/4 w-32 md:right-40 md:top-1/4 md:w-96"
           />
         </div>
       </header>
