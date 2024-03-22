@@ -21,8 +21,7 @@ const page = async () => {
       },
     },
   });
-  job = await cloudConvert.jobs.wait(job.id);
-  console.log(job.tasks[2].result)
+//   job = await cloudConvert.jobs.wait(job.id);
   return <div>
     <a href="">Download</a>
   </div>;
