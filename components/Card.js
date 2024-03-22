@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Card = ({ card }) => {
   return (
-    <div className="bg-white shadow-lg rounded-xl p-4 bg-opacity-20 filter bg-gradient-to-b from-white to-slate-200 border border-gray-300 pt-10 hover:-translate-y-2 hover:shadow-xl transition duration-200">
+    <div className="bg-white shadow-lg rounded-xl p-4 bg-opacity-20 filter bg-gradient-to-b from-white to-slate-200 border border-gray-300 pt-10 hover:-translate-y-2 hover:shadow-xl focus-within:-translate-y-2 focus-within:shadow-xl transition duration-200">
       <Image
         src={card.image}
         alt={card.description}
