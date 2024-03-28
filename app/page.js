@@ -1,75 +1,86 @@
 import Card from "@/components/Card";
 import Image from "next/image";
-import icon from './icon.png';
+import icon from "./icon.png";
+
+import convertFile from "/public/convert-file.png";
+import captureWebsite from "/public/capture-website.png";
+import optimizeFile from "/public/optimize-file.png";
+import createThumbnail from "/public/create-thumbnail.png";
+import addWatermark from "/public/add-watermark.png";
+import getMetadata from "/public/get-metadata.png";
+import writeMetadata from "/public/write-metadata.png";
+import mergeFiles from "/public/merge-files.png";
+import createArchive from "/public/create-archive.png";
+import executeCommand from "/public/execute-command.png";
 
 export default function Home() {
   const cards = [
     {
-      image: "/convert-file.png",
-      href: 'convert-file',
+      image: convertFile,
+      href: "convert-file",
       title: "Convert File",
       description: "Convert files from one format to another.",
     },
     {
-      image: "/capture-website.png",
-      href: 'capture-website',
+      image: captureWebsite,
+      href: "capture-website",
       title: "Capture Website",
       description: "Capture websites and save them as images or PDFs.",
     },
     {
-      image: "/optimize-file.png",
-      href: 'optimize-file',
+      image: optimizeFile,
+      href: "optimize-file",
       title: "Optimize File",
       description:
         "Optimize files to reduce their size without losing quality.",
     },
     {
-      image: "/create-thumbnail.png",
-      href: 'create-thumbnail',
+      image: createThumbnail,
+      href: "create-thumbnail",
       title: "Create Thumbnail",
       description: "Generate thumbnail images from larger images.",
     },
     {
-      image: "/add-watermark.png",
-      href: 'add-watermark',
+      image: addWatermark,
+      href: "add-watermark",
       title: "Add Watermark",
       description:
         "Add watermarks to protect your files from unauthorized use.",
     },
     {
-      image: "/get-metadata.png",
-      href: 'get-metadata',
+      image: getMetadata,
+      href: "get-metadata",
       title: "Get Metadata",
       description: "Retrieve metadata information from files.",
     },
     {
-      image: "/write-metadata.png",
-      href: 'write-metadata',
+      image: writeMetadata,
+      href: "write-metadata",
       title: "Write Metadata",
       description: "Write or modify metadata information in files.",
     },
     {
-      image: "/merge-files.png",
-      href: 'merge-files',
+      image: mergeFiles,
+      href: "merge-files",
       title: "Merge Files",
       description: "Merge multiple files into a single file.",
     },
     {
-      image: "/create-archive.png",
-      href: 'create-archive',
+      image: createArchive,
+      href: "create-archive",
       title: "Create Archive",
       description: "Create compressed archives of files and folders.",
     },
     {
-      image: "/execute-command.png",
-      href: 'execute-command',
+      image: executeCommand,
+      href: "execute-command",
       title: "Execute Command",
       description: "Execute custom commands or scripts.",
     },
   ];
 
   return (
-    <>
+    <div>
       <header
         className="bg-fixed py-4 bg-background-image bg-contain bg-no-repeat md:bg-cover flex items-center rounded-b-xl h-4/5 md:h-96"
         style={{ boxShadow: "inset 0 -2px 10px 2px rgba(0, 0, 0, .2)" }}
@@ -101,14 +112,12 @@ export default function Home() {
       </header>
       <main>
         <section id="tools" className="mt-32 md:mt-32">
-          <h1 className="text-slate-700 ml-12 text-2xl font-bold">File Management Tools</h1>
-          <hr className="rounded-md h-2 bg-slate-300 w-32 ml-12 mt-2" />
+          <h1 className="text-slate-700 ml-12 text-2xl font-bold">
+            File Management Tools
+          </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-10 my-8">
             {cards.map((card, index) => (
-              <Card
-                key={index}
-                card={card}
-              />
+              <Card key={index} card={card} />
             ))}
           </div>
         </section>
@@ -116,27 +125,61 @@ export default function Home() {
       <footer className="bg-gray-700 py-4">
         <section className="py-8">
           <div className="container">
-            <h2 className="text-2xl text-center text-white font-bold mb-4">Connect with me</h2>
+            <h2 className="text-2xl text-center text-white font-bold mb-4">
+              Connect with me
+            </h2>
             <div className="flex justify-center">
-              <a target="_blank" href="https://twitter.com/AdhhamDev" className="mx-4">
-                <Image src="/twitter.png" alt="Twitter" width={36} height={36} />
+              <a
+                target="_blank"
+                href="https://twitter.com/AdhhamDev"
+                className="mx-4"
+              >
+                <Image
+                  src="/twitter.png"
+                  alt="Twitter"
+                  width={36}
+                  height={36}
+                />
               </a>
-              <a target="_blank" href="https://www.linkedin.com/in/adhham/" className="mx-4">
-                <Image src="/linkedin.png" alt="LinkedIn" width={36} height={36} />
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/adhham/"
+                className="mx-4"
+              >
+                <Image
+                  src="/linkedin.png"
+                  alt="LinkedIn"
+                  width={36}
+                  height={36}
+                />
               </a>
-              <a target="_blank" href="https://web.facebook.com/msmadhhamsafwan/" className="mx-4">
-                <Image src="/facebook.png" alt="Facebook" width={36} height={36} />
+              <a
+                target="_blank"
+                href="https://web.facebook.com/msmadhhamsafwan/"
+                className="mx-4"
+              >
+                <Image
+                  src="/facebook.png"
+                  alt="Facebook"
+                  width={36}
+                  height={36}
+                />
               </a>
-              <a target="_blank" href="https://github.com/adhhamdev" className="mx-4">
+              <a
+                target="_blank"
+                href="https://github.com/adhhamdev"
+                className="mx-4"
+              >
                 <Image src="/github.png" alt="GitHub" width={36} height={36} />
               </a>
             </div>
           </div>
         </section>
         <p className="text-center text-white bg-fixed">
-          &copy; {new Date().getFullYear()} FileDex with 💖 from Adhham. All rights reserved.
+          &copy; {new Date().getFullYear()} FileDex with 💖 from Adhham. All
+          rights reserved.
         </p>
       </footer>
-    </>
+    </div>
   );
 }

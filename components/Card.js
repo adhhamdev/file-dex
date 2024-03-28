@@ -10,6 +10,7 @@ const Card = ({ card }) => {
         className="w-32 object-contain rounded-lg mx-auto"
         width={512}
         height={512}
+        placeholder="blur"
       />
       <h2 className="text-xl mt-8 font-bold">{card.title}</h2>
       <p title={card.description} className="overflow-hidden overflow-ellipsis h-12">{card.description}</p>
